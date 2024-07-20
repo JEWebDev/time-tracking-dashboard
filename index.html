@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <style></style>
+  </head>
+  <body>
+    <main>
+      <article class="user">
+        <header class="userInfo">
+          <img src="" alt="" />
+          <div class="wrapper">
+            <span>Report for</span>
+            <h1>Jeremy Robson</h1>
+          </div>
+        </header>
+        <nav>
+          <form action="" id="timeframe-form">
+            <label for="daily">Daily</label>
+            <input type="radio" name="timeframe" id="daily" value="day" />
+            <label for="timeframe">Weekly</label>
+            <input type="radio" name="timeframe" id="weekly" value="week" />
+            <label for="timeframe">Monthly</label>
+            <input type="radio" name="timeframe" id="monthly" value="month" />
+          </form>
+        </nav>
+      </article>
+      <section class="dashboard" id="dashboard">
+        <article>
+          <div class="descrition">
+            <div class="wrapper">
+              <h2 id="task">work</h2>
+              <p class="hours" id="hours">32hrs</p>
+            </div>
+            <div class="wrapper">
+              <img src="images/icon-ellipsis.svg" alt="three white dots" />
+              <p class="timeframe" id="timeframe">Last week - 36hours</p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </footer>
+  </body>
+</html>
