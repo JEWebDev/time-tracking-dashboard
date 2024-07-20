@@ -20,8 +20,8 @@
   <body>
     <main>
       <article class="user">
-        <header class="userInfo">
-          <img src="" alt="" />
+        <header class="user-info">
+          <img src="images/image-jeremy.png" alt="Jeremy" />
           <div class="wrapper">
             <span>Report for</span>
             <h1>Jeremy Robson</h1>
@@ -29,24 +29,26 @@
         </header>
         <nav>
           <form action="" id="timeframe-form">
-            <label for="daily">Daily</label>
             <input type="radio" name="timeframe" id="daily" value="day" />
-            <label for="timeframe">Weekly</label>
+            <label for="daily">Daily</label>
+
             <input type="radio" name="timeframe" id="weekly" value="week" />
-            <label for="timeframe">Monthly</label>
+            <label for="weekly">Weekly</label>
+
             <input type="radio" name="timeframe" id="monthly" value="month" />
+            <label for="monthly">Monthly</label>
           </form>
         </nav>
       </article>
       <section class="dashboard" id="dashboard">
-        <article>
-          <div class="descrition">
+        <article class="task work" id="task">
+          <div class="description">
             <div class="wrapper">
-              <h2 id="task">work</h2>
-              <p class="hours" id="hours">32hrs</p>
+              <h2 id="task">Work</h2>
+              <img src="images/icon-ellipsis.svg" alt="three white dots" />
             </div>
             <div class="wrapper">
-              <img src="images/icon-ellipsis.svg" alt="three white dots" />
+              <p class="hours" id="hours">32hrs</p>
               <p class="timeframe" id="timeframe">Last week - 36hours</p>
             </div>
           </div>
