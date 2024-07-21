@@ -91,8 +91,10 @@ body {
   font-size: 1rem;
 
   background-color: var(--Very-dark-blue);
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .user {
@@ -120,6 +122,7 @@ body {
       color: var(--Pale-Blue);
     }
     h1 {
+      color: white;
       font-weight: var(--fw-thin);
       font-size: 1.25rem;
     }
@@ -149,10 +152,11 @@ body {
   }
 }
 main {
+  max-width: 1200px;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 1rem;
-  min-width: 100%;
+  width: 100%;
 
   .dashboard {
     display: grid;
@@ -215,6 +219,7 @@ main {
     background-color: var(--Dark-blue);
     border-radius: 9px;
     padding: 1.25rem 1rem;
+    min-height: 100%;
 
     .wrapper {
       display: flex;
@@ -247,4 +252,64 @@ main {
 }
 .attribution a {
   color: var(--Pale-Blue);
+}
+
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 1.5rem;
+
+    .user {
+      .user-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 2rem;
+
+        padding-bottom: 4.5rem;
+        span {
+          font-size: 1rem;
+        }
+
+        h1 {
+          font-size: 2.5rem;
+        }
+      }
+
+      .timeframe-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+
+        label {
+          font-size: 1.125rem;
+        }
+      }
+    }
+
+    .dashboard {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1.5rem;
+      .task {
+        .description {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+
+          .wrapper:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            p:nth-child(1) {
+              font-size: 2.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }
