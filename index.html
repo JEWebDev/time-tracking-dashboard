@@ -29,39 +29,49 @@
         </header>
         <nav>
           <form action="" id="timeframe-form">
-            <input type="radio" name="timeframe" id="daily" value="day" />
+            <input type="radio" name="timeframe" id="daily" value="daily" />
             <label for="daily">Daily</label>
 
-            <input type="radio" name="timeframe" id="weekly" value="week" />
+            <input
+              type="radio"
+              name="timeframe"
+              id="weekly"
+              value="weekly"
+              checked
+            />
             <label for="weekly">Weekly</label>
 
-            <input type="radio" name="timeframe" id="monthly" value="month" />
+            <input type="radio" name="timeframe" id="monthly" value="monthly" />
             <label for="monthly">Monthly</label>
           </form>
         </nav>
       </article>
-      <section class="dashboard" id="dashboard">
-        <article class="task work" id="task">
-          <div class="description">
-            <div class="wrapper">
-              <h2 id="task">Work</h2>
-              <img src="images/icon-ellipsis.svg" alt="three white dots" />
-            </div>
-            <div class="wrapper">
-              <p class="hours" id="hours">32hrs</p>
-              <p class="timeframe" id="timeframe">Last week - 36hours</p>
-            </div>
-          </div>
-        </article>
-      </section>
+      <section class="dashboard" id="dashboard"></section>
     </main>
     <footer>
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">Juan Esparza</a>.
       </div>
     </footer>
+
+    <template id="task-template">
+      <article class="task" id="task">
+        <div class="description">
+          <div class="wrapper">
+            <h2 id="title">Work</h2>
+            <img src="images/icon-ellipsis.svg" alt="three white dots" />
+          </div>
+          <div class="wrapper">
+            <p class="hours" id="current-hours">32hrs</p>
+            <p class="timeframe" id="timeframe">
+              <span id="previous-hours">36hours </span>
+            </p>
+          </div>
+        </div>
+      </article>
+    </template>
   </body>
 </html>

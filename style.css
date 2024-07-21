@@ -91,10 +91,12 @@ body {
   font-size: 1rem;
 
   background-color: var(--Very-dark-blue);
+  display: grid;
+  place-items: center;
 }
 
 .user {
-  max-width: 100%;
+  min-width: 100%;
   background-color: var(--Dark-blue);
   border-radius: 12px;
   .user-info {
@@ -150,6 +152,13 @@ main {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 1rem;
+  min-width: 100%;
+
+  .dashboard {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+  }
 
   .work {
     background-color: var(--work);
@@ -160,26 +169,39 @@ main {
   .play {
     background-color: var(--play);
     background-image: url("images/icon-play.svg");
+    background-position: 95%;
+    background-position-y: -15px;
   }
 
   .study {
     background-color: var(--study);
     background-image: url("images/icon-study.svg");
+    background-position-x: 95%;
+    background-position-y: -10px;
   }
 
   .exercise {
     background-color: var(--exercise);
     background-image: url(images/icon-exercise.svg);
+
+    background-position-x: 95%;
+    background-position-y: 0;
   }
 
   .social {
     background-color: var(--social);
     background-image: url(images/icon-social.svg);
+
+    background-position-x: 95%;
+    background-position-y: -20px;
   }
 
   .selfcare {
     background-color: var(--self-care);
     background-image: url(images/icon-self-care.svg);
+
+    background-position-x: 95%;
+    background-position-y: -10px;
   }
 
   .task {
@@ -221,7 +243,8 @@ main {
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: white;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--Pale-Blue);
 }
