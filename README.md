@@ -20,7 +20,8 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 
 ### Screenshot
 
-![](./screenshot.jpg)
+- Desktop design ![](./images/screenshot-desktop.png)
+- Mobile design ![](./images/screenshot-mobile.png)
 
 ### Links
 
@@ -39,8 +40,12 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 
 ### What I learned
 
+I practiced how to use data from a json file and render it dynamically, also practiced css grid
+
 ### Continued development
+
+I want to continue working with data and build more bigger and complex projects
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@JEWebDev](https://www.frontendmentor.io/profile/JEWebDev)
