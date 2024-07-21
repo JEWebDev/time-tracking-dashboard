@@ -233,6 +233,9 @@ main {
       font-size: 18px;
     }
 
+    img:hover {
+      cursor: pointer;
+    }
     .hours {
       font-size: 1.75rem;
       color: white;
@@ -242,6 +245,11 @@ main {
     .timeframe {
       color: white;
     }
+  }
+
+  .description:hover {
+    background-color: #34397b;
+    cursor: pointer;
   }
 }
 

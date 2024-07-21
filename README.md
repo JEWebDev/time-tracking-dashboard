@@ -26,7 +26,7 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live site demo](https://jewebdev.github.io/time-tracking-dashboard/)
 
 ## My process
 
@@ -34,7 +34,7 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
+- Flex box
 - CSS Grid
 - Mobile-first workflow
 
